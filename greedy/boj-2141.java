@@ -16,5 +16,7 @@
 왼쪽으로 더해가도 중간부분은 오른쪽부분으로 가야하기때문이다
 그리고 인구수+1을 왜하냐 3/2 총인구수의 절반이 넘으면 그위치가 정답인데
 사람은 자를수가없기떄문에 반올림을해준다.
+https://dang2dangdang2.tistory.com/118
 
+https://velog.io/@guri_coding/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%8A%A4%ED%84%B0%EB%94%94-%EA%B7%B8%EB%A6%AC%EB%94%94-3%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4-feat.-%EB%B8%94%EB%A1%9C%EA%B7%B82-%EC%9A%B0%EC%B2%B4%EA%B5%AD-%EA%B3%B5%ED%95%AD
 **/
