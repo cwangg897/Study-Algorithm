@@ -31,6 +31,7 @@
 5. <a href="#5">큐(Queue)</a>
 6. <a href="#6">BFS/DFS 11제</a>
 7. <a href="#7">백트래킹</a>
+8. 7. <a href="#8">구현 및 시물레이션</a>
 
 ### <a name="1">브론즈 기초 100제</a>
 
@@ -439,7 +440,7 @@ Game Addiction	https://www.acmicpc.net/problem/20152
 회의실 배정 3	https://www.acmicpc.net/problem/19622
 
 
-### <a name="7">구현 및 시물레이션브론즈/실버 난이도 (Stack)</a> 
+### <a name="8">구현 및 시물레이션브론즈/실버 난이도 (Stack)</a> 
 
 https://www.acmicpc.net/problem/10798 <br>
 https://www.acmicpc.net/problem/2490 <br>
