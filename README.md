@@ -439,6 +439,18 @@ Game Addiction	https://www.acmicpc.net/problem/20152
 회의실 배정 3	https://www.acmicpc.net/problem/19622
 
 
+### <a name="7">구현 및 시물레이션브론즈/실버 난이도 (Stack)</a> 
+
+https://www.acmicpc.net/problem/10798 <br>
+https://www.acmicpc.net/problem/2490 <br>
+https://www.acmicpc.net/problem/2884 <br>
+https://www.acmicpc.net/problem/3048 <br>
+https://www.acmicpc.net/problem/2980 <br>
+https://www.acmicpc.net/problem/1063 <br>
+https://www.acmicpc.net/problem/8979 <br>
+https://www.acmicpc.net/problem/2563 <br>
+
+
 
 ### <a name="4">스택(Stack)</a>
 
