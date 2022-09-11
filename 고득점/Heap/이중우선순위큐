@@ -1,0 +1,36 @@
+큐에 remove가 존재하는지몰랐다
+
+
+int[] answer = new int[2];
+        PriorityQueue<Integer> minPq = new PriorityQueue<>();
+        PriorityQueue<Integer> maxPq = new PriorityQueue<>(Collections.reverseOrder());
+
+
+        for(int i=0; i< operations.length; i++){
+            String[] split = operations[i].split(" ");
+            if(split[0].equals("I")){
+                int num = Integer.parseInt(split[1]);
+                maxPq.offer(num);
+                minPq.offer(num);
+            } else if(split[0].equals("D")){
+                if(!maxPq.isEmpty() && !minPq.isEmpty()){
+                    if(split[1].equals("1")){
+                        Integer peek = maxPq.peek();
+                        maxPq.remove(peek);
+                        minPq.remove(peek);
+                    } else if (split[1].equals("-1")){
+                        Integer peek = minPq.peek();
+                        maxPq.remove(peek);
+                        minPq.remove(peek);
+                    }
+                }
+            }
+        }
+        if(!maxPq.isEmpty()){
+            answer[0] = maxPq.peek();
+            answer[1] = minPq.peek();
+        } else{
+            answer[0] = 0;
+            answer[1] = 0;
+        }
+        return answer;
