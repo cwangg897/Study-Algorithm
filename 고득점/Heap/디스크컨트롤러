@@ -1,0 +1,66 @@
+작업이 4에있을수있으니까 내가 처음에했던식은 틀렸다.
+
+
+
+import java.util.*;
+
+class Solution {
+    public int solution(int[][] jobs) {
+        // 작업의 요청부터 종료까지 걸린 시간의 평균은 10ms(= (3 + 11 + 16) / 3)가 됩니다.
+        int answer = 0;
+
+        PriorityQueue<Process> waitQueue = new PriorityQueue<Process>(new Comparator<Process>() {
+            @Override
+            public int compare(Process o1, Process o2) {
+                return o1.requestTime - o2.requestTime;
+            }
+        });
+
+        for(int i=0; i< jobs.length; i++){
+            Process process = new Process(jobs[i][0], jobs[i][1]);
+            waitQueue.offer(process);
+        }
+
+        PriorityQueue<Process> runQueue = new PriorityQueue<Process>(new Comparator<Process>() {
+            @Override
+            public int compare(Process o1, Process o2) {
+                return o1.jobTime - o2.jobTime;
+            }
+        });
+
+
+
+        int count = 0; // 작업시간
+        int sum = 0;
+        int time = 0; // 현재시간
+        while(count < jobs.length){
+            while(!waitQueue.isEmpty() && time >= waitQueue.peek().requestTime){ // 요청시간이 현재 시간이 더 크거나작아야함
+                runQueue.offer(waitQueue.poll());
+            }
+            if(!runQueue.isEmpty()){
+                Process process = runQueue.poll();
+                sum += process.jobTime + (time - process.requestTime);
+                time += process.jobTime;
+                count +=1;
+            } else{
+                time +=1;
+            }
+        }
+
+
+        answer = sum / count;
+        return answer;
+    }
+
+    static class Process {
+        int requestTime;
+        int jobTime;
+
+        public Process(int requestTime, int jobTime){
+            this.requestTime = requestTime;
+            this.jobTime = jobTime;
+        }
+    }
+
+
+}
