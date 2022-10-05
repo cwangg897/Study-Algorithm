@@ -1,5 +1,6 @@
 # Study-Algorithm
 ### 목표 : https://haesoo9410.tistory.com/351 
+### 문제 : https://github.com/haesoo-y/baekjoon-for-js
 * 노션 [주제별 문제 리스트](https://www.notion.so/c06177ba1f5c40ecba8f77513e959d9f) 참고 (추천 문제 리스트 올릴 예정)
 
 ### 문제풀이 사이트
