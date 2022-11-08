@@ -7,9 +7,6 @@ public class Main {
     static int k;
     static int[] map = new int[100001];
     static int result = 0;
-
-    static int time = 0;
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
@@ -28,10 +25,7 @@ public class Main {
             int poll = queue.poll();
 
             if(poll == k){
-                if(result ==0){
-                    time = map[k];
-                }
-                // 아래에서 거리가 같은경우니까 여기서는 result만 넣고 continue는 만약 찾아는데 계속 진행할 필요도 없으니까 
+                // 아래에서 거리가 같은경우니까 여기서는 result만 넣고 continue는 만약 찾아는데 계속 진행할 필요도 없으니까
                 result+=1;
                 continue;
             }
@@ -41,7 +35,7 @@ public class Main {
                 int nx = arr[i];
                 if(nx<0 || nx>100000) continue;
 
-                // 최초 방문이거나 중복인데 거리가 같은경우 넣어주는거지 
+                // 최초 방문이거나 중복인데 거리가 같은경우 넣어주는거지
                 if(map[nx] == 0 ||  map[poll]+1 == map[nx]){
                     map[nx] = map[poll] +1;
                     queue.offer(nx);
