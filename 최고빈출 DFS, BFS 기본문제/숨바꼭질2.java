@@ -1,3 +1,5 @@
+bfs에서 나는 queue를 사용했기때문에 무조건 최소가 먼저나오게된다 
+
 import java.util.*;
 
 public class Main {
