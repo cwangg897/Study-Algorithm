@@ -12,4 +12,5 @@ ORDER BY REVIEW_DATE ASC, RR.REVIEW_TEXT ASC
 
 -----------
 inner join으로 푸는방법과 oter join으로 푸는방법이 존재한다
+inner join도 하면 행이 여러개 나오기때문에 가능
 https://yongku.tistory.com/entry/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4SQL-%EA%B7%B8%EB%A3%B9%EB%B3%84-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EC%8B%9D%EB%8B%B9-%EB%AA%A9%EB%A1%9D-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0-%EC%98%A4%EB%9D%BC%ED%81%B4Oracle
